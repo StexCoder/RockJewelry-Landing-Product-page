@@ -1,0 +1,99 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: linear-gradient(black, rgb(0, 0, 14));
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+   
+   
+  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.mainlogo{ 
+    font-size: 24px;
+    margin-right: 20px; /*Space between logo and Product link*/
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu{
+    margin-left: 20px;
+    /*ensures space between logo and product*/
+
+}  
+
+
+.shopping-cart{
+    margin-left: auto;
+}
+
+.cart{
+ padding: 100px 100px 100px 100px;   
+ text-decoration: none;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 100px;
+  left: 15px;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgb(252, 0, 0);
+  font-size: 35px;
+  cursor: pointer;
+}

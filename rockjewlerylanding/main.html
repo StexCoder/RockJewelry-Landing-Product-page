@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RockJewelry/shop</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1 class="mainlogo">RockJewelry</h1>
+        </div>
+    
+        <div class="menu">
+            <a href="main.html" class="active">Products</a>
+        </div>
+    
+        <div class="shopping-cart">
+            <a href="#" class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <img src="/photos/product.jpg" alt="Cross necklace, 50$"  width="100%" onclick="myFunction(this);"> <!--WIDTH 100%
+            IMPORTANT TO MAKE A SMALL WINDOW FOR IMAGE
+            
+            -->
+        </div>
+
+        <div class="column">
+            <img src="/photos/product1.jpg" alt="Carnelian necklace!
+            🍄Chain is made out of stainless steel
+            🍄Wire is made out of copper, 50$" width="100%"  onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="/photos/product2.jpg" alt="Stainless steel necklace with glass beads!
+            🍄 Necklace won't rust or change color
+            🍄 Adjustable 50$" width="100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="/photos/product3.jpg" alt="Cross necklace, 50$" width="100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="/photos/product4.jpg" alt="Cross necklace, 50$"  width="100%" onclick="myFunction(this);"> <!--WIDTH 100%
+            IMPORTANT TO MAKE A SMALL WINDOW FOR IMAGE
+            
+            -->
+        </div>
+
+        <div class="column">
+            <img src="/photos/product5.jpg" alt="Cross necklace, 50$" width="100%"  onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="/photos/product6.jpg" alt="Cross necklace, 50$" width="100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="/photos/product7.jpg" alt="Cross necklace, 50$" width="100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+
+    
+
+    <!--expanded image-->
+
+    <div class="container">
+        <!--Close the image-->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"  >&times;
+
+        </span>
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
+   
